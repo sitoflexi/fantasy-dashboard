@@ -35,7 +35,8 @@
     else { if (sel.length >= 4) sel.shift(); sel.push(name); }
     renderTable(); renderEvo();
   }
-  const nameCell = (t, extra = {}) => el("td", { class: "name", ...extra }, t.name, el("span", { class: "team" }, t.team));
+  const teamTag = (team, name) => (team && team !== name ? el("span", { class: "team" }, team) : null);
+  const nameCell = (t, extra = {}) => el("td", { class: "name", ...extra }, t.name, teamTag(t.team, t.name));
   const teamOf = (p) => (D.players.find((x) => x.name === p) || {}).team || "";
 
   // ---------- Tiles ----------
@@ -254,7 +255,7 @@
       if (r.ajuste) parts.push(`ajuste → ${eur(r.ajuste)}`);
       return el("tr", {},
         el("td", { class: "pos" }, r.pos ? `${r.pos}º` : "–"),
-        el("td", { class: "name" }, p, x.winners.includes(p) ? " 👑" : "", x.losers.includes(p) ? " 💸" : "", el("span", { class: "team" }, teamOf(p))),
+        el("td", { class: "name" }, p, x.winners.includes(p) ? " 👑" : "", x.losers.includes(p) ? " 💸" : "", teamTag(teamOf(p), p)),
         el("td", { class: "ptsc left" }, r.pts ?? "–", r.pts ? el("span", { class: "ptsbar", style: `width:${Math.round((r.pts / maxPts) * 100)}%` }) : null),
         el("td", { class: "payc", title: parts.join(" · ") }, eur(r.pago), r.sanc || r.ajuste ? el("span", { class: "team" }, `+${e0(r.sanc + r.ajuste)} ${r.sanc ? "sanción" : "ajuste"}`) : null),
         el("td", { class: "brk" }, parts.join(" · ")));
@@ -270,7 +271,7 @@
     const T = S.table, A = S.active;
     const bars = (box, items, maxV, fmt) => $(box).replaceChildren(...items.map((it) =>
       el("div", { class: "stackrow", title: it.title || "" },
-        el("span", { class: "n" }, it.name, el("small", {}, it.team)),
+        el("span", { class: "n" }, it.name, it.team && it.team !== it.name ? el("small", {}, it.team) : null),
         el("span", { class: "bar" }, el("span", { style: `width:${Math.max(2, (it.v / maxV) * 100)}%;background:${it.color || "var(--accent)"};border-radius:0 4px 4px 0` })),
         el("span", { class: "v" }, fmt(it)))));
     const nP = D.players.length;

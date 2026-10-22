@@ -1,36 +1,36 @@
 {
  "liga": "LaLiga AMOS v2",
  "temporada": "26/27",
- "updated": "2026-10-22T10:00:00Z",
+ "updated": "2026-10-22T09:55:00Z",
  "updatedBy": "Claude",
  "players": [
   {
-   "name": "citoflexi",
-   "team": "sitoflexi"
+   "name": "sitoflexi",
+   "team": ""
   },
   {
-   "name": "nugget",
-   "team": "SuperNugget"
+   "name": "SuperNugget",
+   "team": ""
   },
   {
-   "name": "bielia",
-   "team": "billydamn"
+   "name": "billydamn",
+   "team": ""
   },
   {
-   "name": "jowi sinns",
-   "team": "FOXETA F.C"
+   "name": "FOXETA F.C",
+   "team": ""
   },
   {
-   "name": "genise",
-   "team": "genisuse"
+   "name": "genisuse",
+   "team": ""
   },
   {
-   "name": "carmohidraulic",
-   "team": "carmonetiss"
+   "name": "carmonetiss",
+   "team": ""
   },
   {
-   "name": "Nicolás",
-   "team": "Niktototo"
+   "name": "Niktototo",
+   "team": ""
   }
  ],
  "reglas": {
@@ -47,71 +47,67 @@
    "n": 1,
    "estado": "cerrada",
    "puntos": {
-    "Nicolás": 54,
-    "bielia": 44,
-    "genise": 44,
-    "nugget": 42,
-    "carmohidraulic": 41,
-    "citoflexi": 20,
-    "jowi sinns": 13
+    "Niktototo": 54,
+    "billydamn": 44,
+    "genisuse": 44,
+    "SuperNugget": 42,
+    "carmonetiss": 41,
+    "sitoflexi": 20,
+    "FOXETA F.C": 13
    },
    "rojas": {},
    "noAlineados": {},
    "extras": {
-    "citoflexi": 1
+    "sitoflexi": 1
    }
   },
   {
    "n": 2,
    "estado": "cerrada",
    "puntos": {
-    "genise": 71,
-    "bielia": 54,
-    "Nicolás": 52,
-    "nugget": 46,
-    "citoflexi": 36,
-    "jowi sinns": 24,
-    "carmohidraulic": 23
+    "genisuse": 71,
+    "billydamn": 54,
+    "Niktototo": 52,
+    "SuperNugget": 46,
+    "sitoflexi": 36,
+    "FOXETA F.C": 24,
+    "carmonetiss": 23
    },
    "rojas": {},
    "noAlineados": {},
    "extras": {
-    "Nicolás": 2
+    "Niktototo": 2
    }
   },
   {
    "n": 3,
    "estado": "cerrada",
    "puntos": {
-    "bielia": 87,
-    "citoflexi": 59,
-    "nugget": 57,
-    "genise": 48,
-    "Nicolás": 48,
-    "carmohidraulic": 29,
-    "jowi sinns": 0
+    "billydamn": 87,
+    "sitoflexi": 59,
+    "SuperNugget": 57,
+    "genisuse": 48,
+    "Niktototo": 48,
+    "carmonetiss": 29,
+    "FOXETA F.C": 0
    },
    "rojas": {},
    "noAlineados": {},
    "extras": {
-    "jowi sinns": 5
-   },
-   "ajuste": {
-    "Nicolás": 0.5
-   },
-   "nota": "Empate a 48 entre genise y Nicolás: Nicolás pagó como 5º (+0,50 € de ajuste)."
+    "FOXETA F.C": 5
+   }
   },
   {
    "n": 4,
    "estado": "cerrada",
    "puntos": {
-    "bielia": 81,
-    "genise": 66,
-    "citoflexi": 59,
-    "jowi sinns": 50,
-    "Nicolás": 46,
-    "carmohidraulic": 34,
-    "nugget": 27
+    "billydamn": 81,
+    "genisuse": 66,
+    "sitoflexi": 59,
+    "FOXETA F.C": 50,
+    "Niktototo": 46,
+    "carmonetiss": 34,
+    "SuperNugget": 27
    },
    "rojas": {},
    "noAlineados": {},
@@ -121,13 +117,13 @@
    "n": 5,
    "estado": "cerrada",
    "puntos": {
-    "genise": 80,
-    "nugget": 71,
-    "carmohidraulic": 69,
-    "bielia": 56,
-    "citoflexi": 48,
-    "jowi sinns": 46,
-    "Nicolás": 43
+    "genisuse": 80,
+    "SuperNugget": 71,
+    "carmonetiss": 69,
+    "billydamn": 56,
+    "sitoflexi": 48,
+    "FOXETA F.C": 46,
+    "Niktototo": 43
    },
    "rojas": {},
    "noAlineados": {},
@@ -137,18 +133,18 @@
    "n": 6,
    "estado": "cerrada",
    "puntos": {
-    "citoflexi": 79,
-    "carmohidraulic": 62,
-    "genise": 58,
-    "bielia": 57,
-    "nugget": 48,
-    "Nicolás": 46,
-    "jowi sinns": 39
+    "sitoflexi": 79,
+    "carmonetiss": 62,
+    "genisuse": 58,
+    "billydamn": 57,
+    "SuperNugget": 48,
+    "Niktototo": 46,
+    "FOXETA F.C": 39
    },
    "rojas": {},
    "noAlineados": {},
    "extras": {
-    "nugget": 1
+    "SuperNugget": 1
    },
    "nota": "Incluye el partido aplazado que se jugó más tarde."
   },
@@ -156,38 +152,38 @@
    "n": 7,
    "estado": "cerrada",
    "puntos": {
-    "citoflexi": 109,
-    "Nicolás": 68,
-    "carmohidraulic": 59,
-    "nugget": 58,
-    "jowi sinns": 40,
-    "bielia": 34,
-    "genise": 26
+    "sitoflexi": 109,
+    "Niktototo": 68,
+    "carmonetiss": 59,
+    "SuperNugget": 58,
+    "FOXETA F.C": 40,
+    "billydamn": 34,
+    "genisuse": 26
    },
    "rojas": {},
    "noAlineados": {},
    "extras": {
-    "jowi sinns": 1
+    "FOXETA F.C": 1
    }
   },
   {
    "n": 8,
    "estado": "provisional",
    "puntos": {
-    "genise": 57,
-    "citoflexi": 57,
-    "bielia": 56,
-    "carmohidraulic": 54,
-    "nugget": 51,
-    "jowi sinns": 33,
-    "Nicolás": 31
+    "genisuse": 57,
+    "sitoflexi": 57,
+    "billydamn": 56,
+    "carmonetiss": 54,
+    "SuperNugget": 51,
+    "FOXETA F.C": 33,
+    "Niktototo": 31
    },
    "rojas": {},
    "noAlineados": {},
    "extras": {
-    "genise": 1,
-    "nugget": 1,
-    "jowi sinns": 1
+    "genisuse": 1,
+    "SuperNugget": 1,
+    "FOXETA F.C": 1
    },
    "nota": "Hay un partido suspendido: la posición y los pagos de esta jornada son provisionales."
   },
@@ -195,18 +191,18 @@
    "n": 9,
    "estado": "cerrada",
    "puntos": {
-    "citoflexi": 80,
-    "nugget": 65,
-    "jowi sinns": 65,
-    "genise": 57,
-    "bielia": 50,
-    "carmohidraulic": 49,
-    "Nicolás": 32
+    "sitoflexi": 80,
+    "SuperNugget": 65,
+    "FOXETA F.C": 65,
+    "genisuse": 57,
+    "billydamn": 50,
+    "carmonetiss": 49,
+    "Niktototo": 32
    },
    "rojas": {},
    "noAlineados": {},
    "extras": {
-    "nugget": 1
+    "SuperNugget": 1
    }
   }
  ]

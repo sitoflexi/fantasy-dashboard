@@ -158,7 +158,7 @@
     const rows = D.players.map((pl) => {
       const p = pl.name;
       return el("tr", { "data-p": p },
-        el("td", { class: "name" }, p, el("span", { class: "team" }, pl.team)),
+        el("td", { class: "name" }, p, pl.team && pl.team !== p ? el("span", { class: "team" }, pl.team) : null),
         el("td", {}, numInput(j, "puntos", p, { min: "-50", ph: "–", cls: "pts", keepZero: true })),
         el("td", {}, numInput(j, "rojas", p)),
         el("td", {}, numInput(j, "noAlineados", p)),
