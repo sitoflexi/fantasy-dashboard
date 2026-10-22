@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Admin · AMOS Fantasy</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/fantasy.css">
+<style>
+  .form { display: grid; gap: 10px; max-width: 460px; }
+  .form label { display: grid; gap: 4px; font-size: 13px; color: var(--ink-2); }
+  .bar-top { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; position: sticky; top: 0; z-index: 10;
+    background: var(--page); padding: 10px 0; border-bottom: 1px solid var(--grid); margin-bottom: 16px; }
+  .bar-top .grow { flex: 1; }
+  #status { font-size: 13px; }
+  .ed td { padding: 4px; }
+  .ed input[type=number] { width: 70px; text-align: center; padding: 5px; }
+  .ed input.pts { width: 80px; font-weight: 700; }
+  .ed td.calc { font-weight: 700; min-width: 70px; }
+  .ed td.brk { color: var(--ink-2); font-size: 12px; text-align: left; white-space: normal; min-width: 140px; }
+  .opts { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-bottom: 12px; font-size: 14px; }
+  .opts input[type=text] { width: min(520px, 100%); }
+  .players td { text-align: left; }
+  .players input[type=text] { width: 150px; }
+  ol.steps { padding-left: 20px; color: var(--ink-2); }
+  ol.steps li { margin: 4px 0; }
+  .hidden { display: none !important; }
+  code { background: var(--pending-bg); padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Admin</h1>
+      <div class="sub">AMOS Fantasy</div>
+    </div>
+    <div class="meta"><a href="./">← Volver al dashboard</a></div>
+  </header>
+
+  <!-- Login -->
+  <section class="card hidden" id="vLogin">
+    <h2>Entrar</h2>
+    <p class="hint">Introduce la contraseña de admin.</p>
+    <form class="form" id="fLogin">
+      <input type="password" id="pw" autocomplete="current-password" placeholder="Contraseña" required>
+      <div><button class="primary" type="submit">Entrar</button> <span id="loginMsg"></span></div>
+    </form>
+    <p class="hint" style="margin-top:18px"><a href="#" id="toSetup">Configurar un token nuevo</a> (si ha caducado o es la primera vez).</p>
+  </section>
+
+  <!-- Configuración inicial -->
+  <section class="card hidden" id="vSetup">
+    <h2>Configuración inicial</h2>
+    <p class="hint">Solo se hace una vez (y cuando caduque el token). El token se guarda cifrado con la contraseña; sin ella no sirve de nada.</p>
+    <ol class="steps">
+      <li>Abre <a target="_blank" rel="noopener" href="https://github.com/settings/personal-access-tokens/new">GitHub → Fine-grained token nuevo</a> con la cuenta dueña del repo.</li>
+      <li>Nombre: <code>fantasy-admin</code>. Caducidad: la máxima que permita (1 año).</li>
+      <li>Repository access → <b>Only select repositories</b> → <code>fantasy-dashboard</code>.</li>
+      <li>Permissions → Repository → <b>Contents: Read and write</b>. Nada más.</li>
+      <li>Genera el token, pégalo aquí y elige una contraseña larga (mín. 12 caracteres).</li>
+    </ol>
+    <form class="form" id="fSetup">
+      <label>Token<input type="password" id="sToken" placeholder="github_pat_…" required autocomplete="off"></label>
+      <label>Contraseña de admin<input type="password" id="sPw" minlength="12" required autocomplete="new-password"></label>
+      <label>Repite la contraseña<input type="password" id="sPw2" minlength="12" required autocomplete="new-password"></label>
+      <div><button class="primary" type="submit">Guardar configuración</button> <span id="setupMsg"></span></div>
+    </form>
+  </section>
+
+  <!-- Editor -->
+  <div id="vEdit" class="hidden">
+    <div class="bar-top">
+      <select id="jSel" aria-label="Jornada"></select>
+      <button id="newJ">+ Nueva jornada</button>
+      <span class="grow"></span>
+      <span id="status"></span>
+      <button class="primary" id="save">Guardar cambios</button>
+    </div>
+
+    <section class="card">
+      <h2 id="eTitle">Jornada</h2>
+      <p class="hint">Mete los <b>puntos</b> de cada plantilla (los de la clasificación de la jornada en la app) y, si hay, las <b>rojas</b> y los <b>no alineados</b>. El pago se calcula solo. «Otros» es para importes de rojas / no alineados sin desglosar; «Ajuste» suma o resta a mano.</p>
+      <div class="opts">
+        <label><input type="checkbox" id="prov"> Provisional (falta algún partido aplazado o suspendido)</label>
+        <label>Nota <input type="text" id="nota" placeholder="Opcional, se ve en la pestaña Jornadas"></label>
+      </div>
+      <div class="scroll-x"><table class="ed" id="eTable"></table></div>
+    </section>
+
+    <section class="card">
+      <h2>Jugadores</h2>
+      <p class="hint">Nombre que se muestra y nombre de su plantilla en la app.</p>
+      <table class="players" id="plTable" style="max-width:520px"></table>
+    </section>
+
+    <section class="card">
+      <h2>Sesión</h2>
+      <p class="hint">Cambiar la contraseña cifra el mismo token con la nueva contraseña.</p>
+      <form class="form" id="fPw">
+        <label>Nueva contraseña<input type="password" id="nPw" minlength="12" required autocomplete="new-password"></label>
+        <div><button type="submit">Cambiar contraseña</button> <button type="button" id="logout">Cerrar sesión</button> <span id="pwMsg"></span></div>
+      </form>
+    </section>
+  </div>
+</div>
+<script src="js/config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

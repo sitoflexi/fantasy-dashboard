@@ -1,0 +1,52 @@
+/* Ajustes propios del dashboard Fantasy (sobre style.css, compartido con La Liga Pronòstics) */
+:root { --pay-0: #f0efec; --pay-1: #fbe3dc; --pay-2: #f6c2b3; --pay-3: #ec937c; --pay-4: #d65f47; --pay-5: #a8372a; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --pay-0: #262624; --pay-1: #3b2420; --pay-2: #5a2c24; --pay-3: #86392c; --pay-4: #b44a37; --pay-5: #e0705a; }
+}
+:root[data-theme="dark"] { --pay-0: #262624; --pay-1: #3b2420; --pay-2: #5a2c24; --pay-3: #86392c; --pay-4: #b44a37; --pay-5: #e0705a; }
+
+td.name .team, .jt .team { display: block; font-size: 11px; font-weight: 500; color: var(--muted); line-height: 1.1; }
+td.pay { min-width: 52px; border-right: 2px solid var(--panel); border-bottom: 2px solid var(--panel); position: relative; }
+td.pay.p0 { background: var(--pay-0); color: var(--muted); }
+td.pay.p1 { background: var(--pay-1); }
+td.pay.p2 { background: var(--pay-2); }
+td.pay.p3 { background: var(--pay-3); color: #fff; }
+td.pay.p4 { background: var(--pay-4); color: #fff; }
+td.pay.p5 { background: var(--pay-5); color: #fff; }
+td.pay.live, td.heat.live { background-image: repeating-linear-gradient(135deg, transparent 0 5px, rgba(127,127,127,.22) 5px 7px); }
+.dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: currentColor; vertical-align: 2px; margin-left: 4px; }
+tr.sum td { font-weight: 700; border-top: 1px solid var(--axis); border-bottom: 0; }
+tr.sum td.name { font-weight: 700; }
+td.small, th.small { font-size: 12px; color: var(--ink-2); }
+
+.jt td, .jt th { padding: 8px 10px; }
+.jt td.pos { font-weight: 700; color: var(--ink); width: 40px; }
+.jt td.ptsc { font-weight: 700; font-size: 16px; }
+.jt td.payc { font-weight: 700; font-size: 16px; }
+.jt td.brk { color: var(--ink-2); font-size: 13px; text-align: left; white-space: normal; min-width: 150px; }
+.jt tr.sum td { font-size: 14px; }
+.jt td.ptsc { min-width: 90px; width: 30%; }
+.jt td.ptsc { white-space: nowrap; }
+.ptsbar { display: inline-block; max-width: calc(100% - 40px); height: 8px; border-radius: 4px; background: var(--accent); vertical-align: middle; margin-left: 8px; opacity: .8; }
+
+.rules { margin: 6px 0 0; padding-left: 18px; color: var(--ink-2); font-size: 14px; display: grid; gap: 6px; }
+.rules b { color: var(--ink); }
+
+#avgPos .stackrow, #avgPts .stackrow { grid-template-columns: 112px 1fr 118px; }
+.stackrow .n small { display: block; font-weight: 500; color: var(--muted); font-size: 11px; }
+
+#posDist td.d { min-width: 40px; border-right: 2px solid var(--panel); border-bottom: 2px solid var(--panel); }
+.notice.prov { border-left-color: var(--sign); }
+
+@media (max-width: 640px) {
+  .jt td.brk, .jt th:last-child { display: none; }
+  .jt td, .jt th { padding: 8px 6px; }
+  #avgPos .stackrow, #avgPts .stackrow { grid-template-columns: 96px 1fr 104px; }
+  .jt .ptsbar { display: none; }
+  .jt td.name, .jt tr.sum td { white-space: normal; }
+  .jt tr.sum td.left { font-size: 12px; font-weight: 500; color: var(--ink-2); }
+  .jt td.ptsc { width: auto; min-width: 0; }
+  .tiles { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .tile { padding: 10px 12px; }
+  .tile .v { font-size: 20px; overflow-wrap: anywhere; }
+}

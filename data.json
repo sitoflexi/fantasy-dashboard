@@ -1,0 +1,213 @@
+{
+ "liga": "LaLiga AMOS v2",
+ "temporada": "26/27",
+ "updated": "2026-10-22T10:00:00Z",
+ "updatedBy": "Claude",
+ "players": [
+  {
+   "name": "citoflexi",
+   "team": "sitoflexi"
+  },
+  {
+   "name": "nugget",
+   "team": "SuperNugget"
+  },
+  {
+   "name": "bielia",
+   "team": "billydamn"
+  },
+  {
+   "name": "jowi sinns",
+   "team": "FOXETA F.C"
+  },
+  {
+   "name": "genise",
+   "team": "genisuse"
+  },
+  {
+   "name": "carmohidraulic",
+   "team": "carmonetiss"
+  },
+  {
+   "name": "Nicolás",
+   "team": "Niktototo"
+  }
+ ],
+ "reglas": {
+  "paso": 0.5,
+  "multiplicador": {
+   "19": 4,
+   "38": 8
+  },
+  "porRoja": 1,
+  "porNoAlineado": 1
+ },
+ "jornadas": [
+  {
+   "n": 1,
+   "estado": "cerrada",
+   "puntos": {
+    "Nicolás": 54,
+    "bielia": 44,
+    "genise": 44,
+    "nugget": 42,
+    "carmohidraulic": 41,
+    "citoflexi": 20,
+    "jowi sinns": 13
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {
+    "citoflexi": 1
+   }
+  },
+  {
+   "n": 2,
+   "estado": "cerrada",
+   "puntos": {
+    "genise": 71,
+    "bielia": 54,
+    "Nicolás": 52,
+    "nugget": 46,
+    "citoflexi": 36,
+    "jowi sinns": 24,
+    "carmohidraulic": 23
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {
+    "Nicolás": 2
+   }
+  },
+  {
+   "n": 3,
+   "estado": "cerrada",
+   "puntos": {
+    "bielia": 87,
+    "citoflexi": 59,
+    "nugget": 57,
+    "genise": 48,
+    "Nicolás": 48,
+    "carmohidraulic": 29,
+    "jowi sinns": 0
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {
+    "jowi sinns": 5
+   },
+   "ajuste": {
+    "Nicolás": 0.5
+   },
+   "nota": "Empate a 48 entre genise y Nicolás: Nicolás pagó como 5º (+0,50 € de ajuste)."
+  },
+  {
+   "n": 4,
+   "estado": "cerrada",
+   "puntos": {
+    "bielia": 81,
+    "genise": 66,
+    "citoflexi": 59,
+    "jowi sinns": 50,
+    "Nicolás": 46,
+    "carmohidraulic": 34,
+    "nugget": 27
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {}
+  },
+  {
+   "n": 5,
+   "estado": "cerrada",
+   "puntos": {
+    "genise": 80,
+    "nugget": 71,
+    "carmohidraulic": 69,
+    "bielia": 56,
+    "citoflexi": 48,
+    "jowi sinns": 46,
+    "Nicolás": 43
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {}
+  },
+  {
+   "n": 6,
+   "estado": "cerrada",
+   "puntos": {
+    "citoflexi": 79,
+    "carmohidraulic": 62,
+    "genise": 58,
+    "bielia": 57,
+    "nugget": 48,
+    "Nicolás": 46,
+    "jowi sinns": 39
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {
+    "nugget": 1
+   },
+   "nota": "Incluye el partido aplazado que se jugó más tarde."
+  },
+  {
+   "n": 7,
+   "estado": "cerrada",
+   "puntos": {
+    "citoflexi": 109,
+    "Nicolás": 68,
+    "carmohidraulic": 59,
+    "nugget": 58,
+    "jowi sinns": 40,
+    "bielia": 34,
+    "genise": 26
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {
+    "jowi sinns": 1
+   }
+  },
+  {
+   "n": 8,
+   "estado": "provisional",
+   "puntos": {
+    "genise": 57,
+    "citoflexi": 57,
+    "bielia": 56,
+    "carmohidraulic": 54,
+    "nugget": 51,
+    "jowi sinns": 33,
+    "Nicolás": 31
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {
+    "genise": 1,
+    "nugget": 1,
+    "jowi sinns": 1
+   },
+   "nota": "Hay un partido suspendido: la posición y los pagos de esta jornada son provisionales."
+  },
+  {
+   "n": 9,
+   "estado": "cerrada",
+   "puntos": {
+    "citoflexi": 80,
+    "nugget": 65,
+    "jowi sinns": 65,
+    "genise": 57,
+    "bielia": 50,
+    "carmohidraulic": 49,
+    "Nicolás": 32
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {
+    "nugget": 1
+   }
+  }
+ ]
+}
