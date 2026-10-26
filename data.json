@@ -1,7 +1,7 @@
 {
  "liga": "LaLiga AMOS v2",
  "temporada": "26/27",
- "updated": "2026-10-26T22:30:00Z",
+ "updated": "2026-10-26T22:40:00Z",
  "updatedBy": "Claude",
  "players": [
   {
@@ -207,7 +207,7 @@
   },
   {
    "n": 10,
-   "estado": "provisional",
+   "estado": "cerrada",
    "puntos": {
     "genisuse": 80,
     "Niktototo": 74,
@@ -221,8 +221,7 @@
    "noAlineados": {},
    "extras": {
     "billydamn": 1
-   },
-   "nota": "Puntos tomados con la jornada aún «en directo» en la app: pueden cambiar hasta que se cierre."
+   }
   }
  ]
 }
