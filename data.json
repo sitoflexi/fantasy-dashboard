@@ -1,7 +1,7 @@
 {
  "liga": "LaLiga AMOS v2",
  "temporada": "26/27",
- "updated": "2026-10-22T09:55:00Z",
+ "updated": "2026-10-26T22:30:00Z",
  "updatedBy": "Claude",
  "players": [
   {
@@ -204,6 +204,25 @@
    "extras": {
     "SuperNugget": 1
    }
+  },
+  {
+   "n": 10,
+   "estado": "provisional",
+   "puntos": {
+    "genisuse": 80,
+    "Niktototo": 74,
+    "sitoflexi": 68,
+    "carmonetiss": 61,
+    "billydamn": 57,
+    "SuperNugget": 51,
+    "FOXETA F.C": 45
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {
+    "billydamn": 1
+   },
+   "nota": "Puntos tomados con la jornada aún «en directo» en la app: pueden cambiar hasta que se cierre."
   }
  ]
 }
