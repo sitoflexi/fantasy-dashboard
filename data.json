@@ -1,7 +1,7 @@
 {
  "liga": "LaLiga AMOS v2",
  "temporada": "26/27",
- "updated": "2026-10-26T22:40:00Z",
+ "updated": "2026-10-30T08:27:00Z",
  "updatedBy": "Claude",
  "players": [
   {
@@ -133,7 +133,7 @@
    "n": 6,
    "estado": "cerrada",
    "puntos": {
-    "sitoflexi": 79,
+    "sitoflexi": 80,
     "carmonetiss": 62,
     "genisuse": 58,
     "billydamn": 57,
