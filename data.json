@@ -1,7 +1,7 @@
 {
  "liga": "LaLiga AMOS v2",
  "temporada": "26/27",
- "updated": "2026-10-30T08:27:00Z",
+ "updated": "2026-11-03T00:26:00Z",
  "updatedBy": "Claude",
  "players": [
   {
@@ -222,6 +222,22 @@
    "extras": {
     "billydamn": 1
    }
+  },
+  {
+   "n": 11,
+   "estado": "cerrada",
+   "puntos": {
+    "sitoflexi": 113,
+    "billydamn": 79,
+    "genisuse": 72,
+    "SuperNugget": 69,
+    "carmonetiss": 51,
+    "FOXETA F.C": 49,
+    "Niktototo": 41
+   },
+   "rojas": {},
+   "noAlineados": {},
+   "extras": {}
   }
  ]
 }
