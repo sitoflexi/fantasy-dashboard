@@ -1,7 +1,7 @@
 {
  "liga": "LaLiga AMOS v2",
  "temporada": "26/27",
- "updated": "2026-11-23T22:12:00Z",
+ "updated": "2026-11-23T22:16:00Z",
  "updatedBy": "Claude",
  "players": [
   {
@@ -259,7 +259,7 @@
    "n": 13,
    "estado": "cerrada",
    "puntos": {
-    "genisuse": 71,
+    "genisuse": 72,
     "sitoflexi": 70,
     "SuperNugget": 70,
     "Niktototo": 69,
